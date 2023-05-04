@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book Management Form</title>
+	<style>
+		label {
+			display: inline-block;
+			width: 100px;
+			text-align: right;
+			margin-right: 10px;
+		}
+		input[type="text"], input[type="number"], input[type="date"] {
+			width: 200px;
+			padding: 5px;
+			margin-bottom: 10px;
+			border-radius: 5px;
+			border: none;
+			box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+		}
+		input[type="submit"] {
+			padding: 10px 20px;
+			background-color: #4CAF50;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<h1>Book Management Form</h1>
+	<form method="post" action="submit-book.php">
+		<label for="book_name">Book Name:</label>
+		<input type="text" id="book_name" name="book_name" required><br>
+		<label for="writer_name">Writer Name:</label>
+		<input type="text" id="writer_name" name="writer_name" required><br>
+		<label for="book_age">Book Age:</label>
+		<input type="number" id="book_age" name="book_age" required><br>
+		<label for="publication_date">Publication Date:</label>
+		<input type="date" id="publication_date" name="publication_date" required><br>
+		<label for="num_pages">Number of Pages:</label>
+		<input type="number" id="num_pages" name="num_pages" required><br>
+		<label for="book_type">Book Type:</label>
+		<select id="book_type" name="book_type" required>
+			<option value="">Select a type</option>
+			<option value="Sci-fi">Sci-fi</option>
+			<option value="Drama">Drama</option>
+			<option value="Novel">Novel</option>
+		</select><br>
+		<input type="submit"  value="Add Book" >
+		
+		
+
+	</form>
+</body>
+</html>
